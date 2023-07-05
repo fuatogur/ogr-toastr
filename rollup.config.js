@@ -1,11 +1,12 @@
-const {uglify} = require('rollup-plugin-uglify')
+import {uglify} from 'rollup-plugin-uglify'
+import pkg from './package.json'
 
-module.exports = {
+export default {
   input: 'index.js',
   plugins: [
     uglify()
   ],
   output: [
-    {format: 'umd', file: 'dist/build.js', name: 'toast'}
+    {format: 'umd', file: pkg.main, name: 'toast'}
   ]
 }

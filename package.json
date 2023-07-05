@@ -1,12 +1,16 @@
 {
   "name": "ogr-toastr",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple toastr",
   "main": "dist/build.js",
   "scripts": {
-    "build": "./node_modules/.bin/rollup -c ./rollup.config.js"
+    "build": "rollup -c",
+    "watch": "rollup -c -w"
   },
-  "repository": "fuatogur/ogr-toastr",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fuatogur/ogr-toastr"
+  },
   "keywords": [
     "toastr",
     "toast",
