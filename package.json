@@ -1,0 +1,21 @@
+{
+  "name": "ogr-toastr",
+  "version": "1.0.0",
+  "description": "Simple toastr",
+  "main": "dist/build.js",
+  "scripts": {
+    "build": "./node_modules/.bin/rollup -c ./rollup.config.js"
+  },
+  "repository": "fuatogur/ogr-toastr",
+  "keywords": [
+    "toastr",
+    "toast",
+    "notification"
+  ],
+  "author": "Fuat Oğur",
+  "license": "ISC",
+  "devDependencies": {
+    "rollup": "^1.32.1",
+    "rollup-plugin-uglify": "^6.0.4"
+  }
+}
